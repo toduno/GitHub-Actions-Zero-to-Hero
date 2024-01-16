@@ -15,4 +15,5 @@ def test_add():
 # this program and then run the tesst.
     
 # So all these info or tasks (jobs) will be interpreted in Github actions file for it to execute
-# i.e. first-actions.yml
+# i.e. first-actions.yml. You can check via the yellow small button beside the commit id by clicking on it 
+# in your GitHub repo
