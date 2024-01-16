@@ -1,0 +1,6 @@
+# GitHub Actions - 
+1. platform-oriented solutions and doesn't support many tools e.g. other vcs like gitlab, bitbucket as this is strictly for GitHub vcs
+2. Don't need to install plugins, by default Github seamlessly integrates with the actions file, provides what's required and executes the job in the actions file/pipelines e.g. on: [push/pull] - irrespective of what push/pull/issue action, once defined Github will look into the action then watch for the CI files and understand what needs to be done and start executing the actions file
+3. Pipelines or actions files can be created in a .github/workflows folder in the root folder of the repo
+4. You can have multiple pipelines or actions files e.g. one to check pull reqs maybe a user has provided all details in the pull req or not, one to verify formatting/linking issues, one to check if CI is passing, one for CD, others (sample from argo-cd workflos: release.yml, ci-build.yml, codequality.yml, image.yaml, pr-title-check.yml, update-sync-for-vulnerabilities.yml) - all boils down to what you want to do, and whatever actions you configure e.g. on: [push,pull,issue] - Github doesn't mind executing your pipelines on the actions you provided. If you provide 3 actions it'll know that either of the action has to be matched before it starts executing the pipeline.
+5.  
